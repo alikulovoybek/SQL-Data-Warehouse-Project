@@ -1,3 +1,14 @@
+/*
+================================================================================
+Create CRM and ERP tables
+================================================================================
+Script Purpose:
+	This script creates a new CRM and ERP tables for Bronze Layer.
+	Existing tables are DROPPED and RECREATED each time when the procedure is executed.
+	Using Truncate and Load logic
+*/
+
+
 CREATE OR ALTER PROCEDURE bronze.create_tables AS 
 BEGIN
 	PRINT '====================================================================='
