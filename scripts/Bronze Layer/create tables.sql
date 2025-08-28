@@ -5,7 +5,8 @@ Create CRM and ERP tables
 Script Purpose:
 	This script creates a new CRM and ERP tables for Bronze Layer.
 	Existing tables are DROPPED and RECREATED each time when the procedure is executed.
-	Using Truncate and Load logic
+	(full refresh approach).
+
 */
 
 
@@ -38,7 +39,6 @@ BEGIN
 			prd_start_dt DATETIME,
 			prd_end_dt DATETIME
 			);
-
 
 	IF OBJECT_ID('bronze.crm_sales_details','U') IS NOT NULL
 		DROP TABLE bronze.crm_sales_details;
@@ -77,5 +77,4 @@ BEGIN
 			SUBCAT NVARCHAR(50),
 			MAINTENANCE NVARCHAR(50)
 			);
-
 END;
