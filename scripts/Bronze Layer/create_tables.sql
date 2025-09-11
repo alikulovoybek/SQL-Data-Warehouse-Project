@@ -1,5 +1,5 @@
 /***************************************************************************************
-Script Name   : bronze.create_tables
+Script Name   : create_tables
 Schema        : bronze
 Author 		  : Oybek ALikulov
 
